@@ -1,0 +1,17 @@
+group 'courseWork'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+apply plugin: 'jetty'
+//also applies plugin: 'war'
+//and this also applies plugin: 'java'
+
+repositories{
+    mavenCentral()
+}
+
+dependencies {
+    compile 'javax.servlet:javax.servlet-api:3.1.0'
+}
